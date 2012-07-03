@@ -16,8 +16,10 @@ Generate `features/step_definitions/web_steps.rb`, which will make you write rea
 
 Or generate a feature file:
 
-    rails generate cucumber_rails_training_wheels:feature post title:string body:text number:integer published:boolean
+    Workaround: touch features/support/env.rb
     rails generate scaffold post title:string body:text number:integer published:boolean
+    rails generate cucumber_rails_training_wheels:feature post title:string body:text number:integer published:boolean
+
 
 Congratulations! You have created Cucumber features that no stakeholder will ever want to read. Features that don't express
 any business value at all, but hey - they are green! Good luck maintaining them. You have become an [MDD](http://skillsmatter.com/podcast/home/refuctoring-your-cukes) pro!
